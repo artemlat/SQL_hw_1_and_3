@@ -309,6 +309,11 @@ values
 
 1. Вывести всех работников чьи зарплаты есть в базе, вместе с зарплатами.
 
+```
+select employees.employee_name from employee_salary
+join employees on employees.id  = employee_salary.employee_id;
+```
+![hw_3_1]()
   
 
 

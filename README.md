@@ -197,5 +197,15 @@ values
   (81, 14); /*10*/
 ```
 
+### Таблица roles
+
+7) Создать таблицу roles
+- id. Serial  primary key,
+- role_name. int, not null, unique
+8) Поменять тип столба role_name с int на varchar(30)
+9) Наполнить таблицу roles 20 строками:
+![roles]()
+  
+
 
 

@@ -1,5 +1,7 @@
 # SQL first and third homeworks  
 *Here I learned to create tables in database and work with sql requests.*  
+`Script-4.sql` *is code of the first homework*  
+
 ### Таблица employees
 
 1) Создать таблицу employees

@@ -594,6 +594,16 @@ where roles.role_name like '%Middle%';
 ```
 ![hw_3_26](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_26.png)
 
+27. Вывести количество разработчиков
+
+```
+select count(roles.role_name) as qty_devs from roles_employee
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%developer%';
+```
+![hw_3_27](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_27.png)
+
+
 
 
 

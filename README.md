@@ -656,6 +656,21 @@ order by salary.monthly_salary asc;
 ```
 ![hw_3_31](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_31.png)
 
+32. Вывести имена, должности и ЗП всех специалистов по возрастанию 
+у специалистов у которых ЗП равна 1100, 1500, 2000
+
+```
+select employees.employee_name, roles.role_name, salary.monthly_salary from employee_salary 
+join employees on employees.id = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id
+join roles on roles.id = roles_employee.role_id
+where salary.monthly_salary in (1100, 1500, 2000)
+order by salary.monthly_salary asc;
+```
+![hw_3_32](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_32.png)
+
+
 
 
 

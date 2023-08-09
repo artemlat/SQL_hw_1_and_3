@@ -248,7 +248,7 @@ values
 - role_id. Int, not null (внешний ключ для таблицы roles, поле id)
 11) Наполнить таблицу roles_employee 40 строками:
 
-![roles_employee]()   
+![roles_employee](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/roles_employee.png)   
   
 
 

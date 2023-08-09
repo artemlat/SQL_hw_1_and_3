@@ -444,6 +444,19 @@ where roles.role_name like '%Middle%';
 ```
 ![hw_3_13](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_13.png)
 
+14. Вывести имена и зарплаты Senior специалистов  
+
+```
+select employees.employee_name, salary.monthly_salary, roles.role_name from employee_salary
+join employees on employees.id  = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id 
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%Senior%';
+```
+![hw_3_14](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_14.png)
+
+
 
 
 

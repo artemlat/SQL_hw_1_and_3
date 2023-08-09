@@ -576,6 +576,16 @@ where roles.role_name like '%QA engineer%';
 ```
 ![hw_3_24](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_24.png)
 
+25. Вывести количество QA инженеров
+
+```
+select count(roles.role_name) as qty_qa from roles_employee
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%QA engineer%';
+```
+![hw_3_25](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_25.png)
+
+
 
 
 

@@ -144,7 +144,58 @@ values
 6) Наполнить таблицу employee_salary 40 строками:
 - в 10 строк из 40 вставить несуществующие employee_id
  
-![employee_salary_table](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/employee_salary_table.png)
+![employee_salary_table](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/employee_salary_table.png)  
+
+```
+create table employee_salary (
+	id serial primary key,
+	employee_id int not null unique,
+	salary_id int not null
+);
+
+insert into employee_salary (employee_id, salary_id)
+values
+  (3, 11),
+  (1, 3),
+  (5, 10),
+  (40, 10),
+  (23, 6),
+  (11, 3),
+  (52, 2),
+  (15, 14),
+  (26, 4),
+  (16, 12),
+  (33, 9),
+  (85, 7), /*1*/
+  (2, 1),
+  (27, 9),
+  (100, 4), /*2*/
+  (8, 13),
+  (41, 13),
+  (69, 15),
+  (71, 6), /*3*/
+  (10, 14),
+  (12, 15),
+  (47, 5),
+  (61, 12),
+  (99, 4), /*4*/
+  (17, 8),
+  (34, 10),
+  (44, 14),
+  (75, 15), /*5*/
+  (55, 16),
+  (59, 8),
+  (111, 2), /*6*/
+  (67, 11),
+  (18, 14),
+  (77, 2), /*7*/
+  (4, 3),
+  (6, 7),
+  (89, 11), /*8*/
+  (90, 9), /*9*/
+  (63, 12),
+  (81, 14); /*10*/
+```
 
 
 

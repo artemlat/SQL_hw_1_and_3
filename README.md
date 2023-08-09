@@ -248,7 +248,62 @@ values
 - role_id. Int, not null (внешний ключ для таблицы roles, поле id)
 11) Наполнить таблицу roles_employee 40 строками:
 
-![roles_employee](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/roles_employee.png)   
+![roles_employee](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/roles_employee.png)
+
+```
+create table roles_employee (
+ 	id serial primary key,
+ 	employee_id int not null unique,
+ 	role_id int not null,
+ 	foreign key(employee_id)
+ 		references employees(id),
+ 	foreign key(role_id)
+ 		references roles(id)
+);
+
+insert into roles_employee (employee_id, role_id)
+values
+  (3, 8),
+  (1, 4),
+  (5, 8),
+  (40, 18),
+  (9, 11),
+  (38, 1),
+  (52, 10),
+  (15, 13),
+  (26, 4),
+  (16, 1),
+  (33, 8),
+  (6, 8), 
+  (2, 8),
+  (27, 5),
+  (7, 4), 
+  (8, 9),
+  (41, 14),
+  (69, 20),
+  (32, 1), 
+  (10, 14),
+  (12, 3),
+  (47, 11),
+  (61, 12),
+  (23, 4), 
+  (17, 5),
+  (34, 2),
+  (44, 6),
+  (11, 9), 
+  (55, 13),
+  (59, 11),
+  (31, 2), 
+  (67, 19),
+  (18, 3),
+  (56, 19), 
+  (4, 1),
+  (48, 2),
+  (51, 11), 
+  (49, 9), 
+  (63, 3),
+  (66, 14);
+```
   
 
 

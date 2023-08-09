@@ -456,6 +456,19 @@ where roles.role_name like '%Senior%';
 ```
 ![hw_3_14](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_14.png)
 
+15. Вывести зарплаты Java разработчиков
+
+```
+select salary.monthly_salary, roles.role_name from employee_salary, salary, roles_employee, roles, employees
+where salary.id = employee_salary.salary_id 
+and employees.id = employee_salary.employee_id 
+and roles_employee.employee_id = employees.id 
+and roles.id = roles_employee.role_id
+and roles.role_name like '%Java developer%';
+```
+![hw_3_15](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_15.png)
+
+
 
 
 

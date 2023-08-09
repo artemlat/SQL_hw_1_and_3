@@ -313,7 +313,18 @@ values
 select employees.employee_name from employee_salary
 join employees on employees.id  = employee_salary.employee_id;
 ```
-![hw_3_1]()
+![hw_3_1](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_1.png)
+
+2. Вывести всех работников у которых ЗП меньше 2000.
+
+```
+select employees.employee_name, salary.monthly_salary from employee_salary
+join employees on employees.id  = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id
+where salary.monthly_salary < 2000;
+```
+![hw_3_2]()
+
   
 
 

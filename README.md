@@ -349,6 +349,18 @@ salary.monthly_salary < 2000;
 ```
 ![hw_3_4](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_4.png)
 
+5. Найти всех работников кому не начислена ЗП.
+
+```
+select employees.employee_name, salary.monthly_salary from employee_salary
+full join employees on employees.id = employee_salary.employee_id
+full join salary on salary.id = employee_salary.salary_id
+where salary.monthly_salary is null;
+```
+
+![hw_3_5]()
+
+
 
 
   

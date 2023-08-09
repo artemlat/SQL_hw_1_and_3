@@ -368,7 +368,7 @@ join employees on employees.id = roles_employee.employee_id
 join roles on roles.id = roles_employee.role_id;
 ```
 
-![hw_3_6]()
+![hw_3_6](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_6.png)
 
 
 

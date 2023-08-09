@@ -347,7 +347,7 @@ where employees.employee_name is null
 and 
 salary.monthly_salary < 2000;
 ```
-![hw_3_4](![hw_3_3](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_4.png)
+![hw_3_4](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_4.png)
 
 
 

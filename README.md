@@ -1,4 +1,4 @@
-# #3. SQL first and third homeworks  
+# SQL first and third homeworks  
 *Here I learned to create tables in database and work with sql requests.*  
 ### Таблица employees
 

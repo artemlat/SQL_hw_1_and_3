@@ -603,6 +603,19 @@ where roles.role_name like '%developer%';
 ```
 ![hw_3_27](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_27.png)
 
+28. Вывести фонд (сумму) зарплаты разработчиков
+
+```
+select sum(salary.monthly_salary) as fond_dev from employee_salary 
+join employees on employees.id = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%developer%';
+```
+![hw_3_28](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_28.png)
+
+
 
 
 

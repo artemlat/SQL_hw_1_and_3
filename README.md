@@ -240,4 +240,15 @@ values
   ('Senior Automation QA engineer');
 ```
 
+### Таблица roles_employee
+
+10) Создать таблицу roles_employee
+- id. Serial  primary key,
+- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
+- role_id. Int, not null (внешний ключ для таблицы roles, поле id)
+11) Наполнить таблицу roles_employee 40 строками:
+
+![roles_employee]()   
+  
+
 

@@ -323,7 +323,7 @@ join employees on employees.id  = employee_salary.employee_id
 join salary on salary.id = employee_salary.salary_id
 where salary.monthly_salary < 2000;
 ```
-![hw_3_2]()
+![hw_3_2](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_2.png)
 
   
 

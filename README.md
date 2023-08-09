@@ -370,6 +370,17 @@ join roles on roles.id = roles_employee.role_id;
 
 ![hw_3_6](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_6.png)
 
+7. Вывести имена и должность только Java разработчиков.
+
+```
+select employees.employee_name, roles.role_name from roles_employee
+join employees on employees.id = roles_employee.employee_id
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%Java developer%';
+```
+![hw_3_7]()
+
+
 
 
 

@@ -325,6 +325,18 @@ where salary.monthly_salary < 2000;
 ```
 ![hw_3_2](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_2.png)
 
+3. Вывести все зарплатные позиции, но работник по ним не назначен. 
+(ЗП есть, но не понятно кто её получает.)
+
+```
+select salary.monthly_salary, employees.employee_name from employee_salary 
+join salary on salary.id = employee_salary.salary_id
+full join employees on employees.id = employee_salary.employee_id
+where employees.employee_name is null;
+```
+![hw_3_3]()
+
+
   
 
 

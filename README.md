@@ -564,6 +564,21 @@ where roles.role_name like '%QA engineer%';
 ```
 ![hw_3_23](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_23.png)
 
+24. Вывести максимальную ЗП QA инженеров
+
+```
+select max(salary.monthly_salary) as min_qa_salary  from employee_salary
+join employees on employees.id = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id 
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%QA engineer%';
+```
+![hw_3_24](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_24.png)
+
+
+
+
 
 
 

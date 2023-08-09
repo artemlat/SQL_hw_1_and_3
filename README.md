@@ -204,7 +204,7 @@ values
 - role_name. int, not null, unique
 8) Поменять тип столба role_name с int на varchar(30)
 9) Наполнить таблицу roles 20 строками:
-![roles]()
+![roles](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/roles.png)
   
 
 

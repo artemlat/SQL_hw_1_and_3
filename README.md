@@ -540,6 +540,19 @@ where roles.role_name like '%Junior%';
 ```
 ![hw_3_21](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_21.png)
 
+22. Вывести сумму зарплат JS разработчиков
+
+```
+select sum(salary.monthly_salary) as sum_js_dev_salary  from employee_salary
+join employees on employees.id = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id 
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%JavaScript developer%';
+```
+![hw_3_22](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_22.png)
+
+
 
 
 

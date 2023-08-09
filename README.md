@@ -390,6 +390,19 @@ where roles.role_name like '%Python developer%';
 ```
 ![hw_3_8](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_8.png)
 
+9. Вывести имена и должность всех QA инженеров.
+
+```
+select employees.employee_name, roles.role_name from roles_employee
+join employees on employees.id = roles_employee.employee_id
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%QA engineer%';
+```
+![hw_3_9](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_9.png)
+
+
+   
+
 
 
 

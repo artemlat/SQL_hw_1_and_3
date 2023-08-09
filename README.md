@@ -334,7 +334,7 @@ join salary on salary.id = employee_salary.salary_id
 full join employees on employees.id = employee_salary.employee_id
 where employees.employee_name is null;
 ```
-![hw_3_3]()
+![hw_3_3](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_3.png)
 
 
   

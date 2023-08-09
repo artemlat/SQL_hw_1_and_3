@@ -142,7 +142,8 @@ values
 - employee_id. Int, not null, unique
 - salary_id. Int, not null
 6) Наполнить таблицу employee_salary 40 строками:
-- в 10 строк из 40 вставить несуществующие employee_id  
+- в 10 строк из 40 вставить несуществующие employee_id
+ 
 ![employee_salary_table](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/employee_salary_table.png)
 
 

@@ -468,6 +468,19 @@ and roles.role_name like '%Java developer%';
 ```
 ![hw_3_15](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_15.png)
 
+16. Вывести зарплаты Python разработчиков
+
+```
+select salary.monthly_salary, roles.role_name from employee_salary
+join employees on employees.id = employee_salary.employee_id 
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id 
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%Python developer%';
+```
+![hw_3_16](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_16.png)
+
+
 
 
 

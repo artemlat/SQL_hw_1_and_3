@@ -207,6 +207,37 @@ values
 
 ![roles](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/roles.png)
   
+```
+create table roles (
+	id serial primary key,
+	role_name int not null unique
+);
 
+alter table roles
+alter column role_name type varchar (30);
+
+insert into roles (role_name)
+values
+  ('Junior Python developer'),
+  ('Middle Python developer'),
+  ('Senior Python developer'),
+  ('Junior Java developer'),
+  ('Middle Java developer'),
+  ('Senior Java developer'),
+  ('Junior JavaScript developer'),
+  ('Middle JavaScript developer'),
+  ('Senior JavaScript developer'),
+  ('Junior Manual QA engineer'),
+  ('Middle Manual QA engineer'),
+  ('Senior Manual QA engineer'),
+  ('Project Manager'),
+  ('Designer'),
+  ('HR'),
+  ('CEO'),
+  ('Sales manager'),
+  ('Junior Automation QA engineer'),
+  ('Middle Automation QA engineer'),
+  ('Senior Automation QA engineer');
+```
 
 

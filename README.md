@@ -615,6 +615,20 @@ where roles.role_name like '%developer%';
 ```
 ![hw_3_28](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_28.png)
 
+29. Вывести имена, должности и ЗП всех специалистов по возрастанию
+
+```
+select employees.employee_name, roles.role_name, salary.monthly_salary from employee_salary 
+join employees on employees.id = employee_salary.employee_id
+join salary on salary.id = employee_salary.salary_id 
+join roles_employee on roles_employee.employee_id = employees.id
+join roles on roles.id = roles_employee.role_id
+order by salary.monthly_salary asc;
+```
+
+![hw_3_29](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_29.png)
+
+
 
 
 

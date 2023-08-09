@@ -358,7 +358,8 @@ full join salary on salary.id = employee_salary.salary_id
 where salary.monthly_salary is null;
 ```
 
-![hw_3_5]()
+![hw_3_5](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_5.png)
+
 
 
 

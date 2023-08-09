@@ -358,8 +358,17 @@ full join salary on salary.id = employee_salary.salary_id
 where salary.monthly_salary is null;
 ```
 
-![hw_3_5](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_5.png)
+![hw_3_5](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/hw_3_5.png)  
 
+6. Вывести всех работников с названиями их должности.
+
+```
+select employees.employee_name, roles.role_name from roles_employee
+join employees on employees.id = roles_employee.employee_id
+join roles on roles.id = roles_employee.role_id;
+```
+
+![hw_3_6]()
 
 
 

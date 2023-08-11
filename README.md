@@ -1,7 +1,7 @@
 # SQL first and third homeworks  
 *Here I learned to create tables in database and work with sql requests.*  
-`Script-4.sql` *is file with code of the first homework*  
-`sql_hw_2.sql` *is file with code of the third homework*
+`sql_hw_1.sql` *is file with code of the first homework*  
+`sql_hw_1.sql` *is file with code of the third homework*
 
 ### Таблица employees
 

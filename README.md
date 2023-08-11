@@ -1,6 +1,6 @@
 # SQL first and third homeworks  
 *Here I learned to create tables in database and work with sql requests.*  
-[sql_hw_1.sql]([url](https://github.com/artemlat/SQL_hw_1_and_3/blob/main/sql_hw_1.sql)) *is file with code of the first homework*  
+[sql_hw_1.sql]([https://github.com/artemlat/SQL_hw_1_and_3/blob/main/sql_hw_1.sql]) *is file with code of the first homework*  
 `sql_hw_3.sql` *is file with code of the third homework*
 
 ### Таблица employees
